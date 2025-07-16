@@ -19,7 +19,7 @@ class AgentState(TypedDict):
 def process(state:AgentState)->AgentState:
     response=model.invoke(state["message"])
     state["message"].append(AIMessage(content=response.content))
-    print(f"\n {response.content}")
+    print(f"\n {response.content}\n")
     # print(state["message"])
 
 graph = StateGraph(AgentState)
@@ -33,9 +33,19 @@ conversation_message=[]
 while user_input!='exit':
     conversation_message.append(HumanMessage(content=user_input))
     result= app.invoke({"message":conversation_message})
-    print(result)
+    # print(result)
     conversation_message=result['message']
     user_input=input("ENTER: ")
+
+with open('logfile.txt','w') as file:
+
+    for message in conversation_message:
+        if isinstance(message,HumanMessage):
+            file.write(f"YOU: {message.content}\n")
+        elif isinstance(message,AIMessage):
+            file.write(f"AI: {message.content}\n")
+    file.write("end of conversation")
+print("Conversation saved to logging.txt")
 
 
 

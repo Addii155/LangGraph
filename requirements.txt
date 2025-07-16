@@ -11,9 +11,6 @@ google-generativeai>=0.3.2
 # For environment variable management
 python-dotenv>=1.0.1
 
-# Optional: For HTTP requests if you plan to use external APIs
 requests>=2.31.0
 
-# Optional: For running a FastAPI backend if needed later
-# fastapi
-# uvicorn
+

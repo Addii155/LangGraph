@@ -1,0 +1,13 @@
+YOU: hi
+AI: Hi there! How can I help you today?
+YOU: tell me about yourself
+AI: I am a large language model, trained by Google.  I'm a conversational AI, which means I can communicate and generate human-like text in response to a wide range of prompts and questions.  My knowledge cutoff is 2021, meaning I don't have information on events after that year.
+
+I don't have personal experiences, feelings, or opinions like a human does.  My purpose is to provide information, generate creative text formats (like poems, code, scripts, musical pieces, email, letters, etc.), and answer your questions to the best of my ability based on the data I was trained on.  I'm constantly learning and improving, but I'm still under development.
+
+Think of me as a very advanced search engine and text generator combined.  I can access and process information from a massive dataset, allowing me to answer your questions and complete your requests in a comprehensive and informative way.  I'm here to help you with whatever you need, within my capabilities.
+YOU: tell me a joke
+AI: Why don't scientists trust atoms? 
+
+Because they make up everything!
+end of conversation
